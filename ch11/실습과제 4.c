@@ -19,7 +19,7 @@ int main(void)
     return 0;
 }
 
-/*
+/* 결과:
 char형 변수 a의 주소 : 000000FD248FF5F4
 int형 변수 b의 주소 : 000000FD248FF614
 double형 변수 c의 주소 : 000000FD248FF638##

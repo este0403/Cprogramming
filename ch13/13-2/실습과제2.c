@@ -3,6 +3,8 @@
 // 날 짜 : 2026년 9월 17일
 // 작성자 : 2600152 이준영
 // **********************************************
+#define _CRT_SECURE_NO_WARNINGS
+#pragma warning(disable:6031)
 #include <stdio.h>
 
 int main(void)

@@ -63,9 +63,3 @@ swap함수 호출 후 x=20, y=30, z=10
 [Call-by-reference] 함수 호출 전 num=3
 [Call-by-reference] 함수 호출 후 num=300 (원본이 직접 바뀜)
 ```
-
-## 컴파일/실행 확인
-모든 파일 `gcc -w`로 컴파일 성공, 예제 입력으로 실행하여 위 실행결과와 일치함을 확인함.
-
-## 제출 방법
-`https://github.com/este0403/Cprogramming/tree/main` 에 각 파일 업로드 (수동 업로드).

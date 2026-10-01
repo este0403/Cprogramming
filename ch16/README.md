@@ -38,15 +38,25 @@
 
 **실습과제1 — 행렬 덧셈**
 같은 위치의 원소끼리 더하므로 이중 반복문에서 `c[i][j] = a[i][j] + b[i][j];`를 수행한다. 포인터 표현에서는 `a[i][j]`를 `*(*(a + i) + j)`로 바꿔 쓴다. `a + i`는 i번째 행의 주소, `*(a + i)`는 그 행의 첫 원소 주소, `*(a + i) + j`는 i행 j열 원소의 주소이다.
+<img width="1046" height="178" alt="image" src="https://github.com/user-attachments/assets/4426f763-fb35-44f5-816c-448d8ee0a07c" />
+
 
 **실습과제2 — 최우수 학생**
 학생별 총점을 3.0으로 나눠 평균(`double`)을 구한 뒤, 첫 번째 학생을 최우수로 가정하고 나머지 학생과 평균을 비교하여 인덱스를 갱신한다.
+<img width="1076" height="139" alt="image" src="https://github.com/user-attachments/assets/45aa3d24-7a83-456e-ade6-a8b3aa996072" />
+
 
 **실습과제3 — 최대값과 위치**
 첫 원소를 최대값으로 가정하고 모든 원소를 비교하며, 더 큰 값이 나올 때 값과 함께 행/열 인덱스도 저장한다. 인덱스는 0부터 시작하므로 출력할 때 1을 더한다.
+<img width="1089" height="108" alt="image" src="https://github.com/user-attachments/assets/96c58666-8930-4bfe-a21a-812677d723c2" />
+
 
 **실습과제4 — 문자열 길이**
 문자열은 널 문자(`'\0'`)로 끝나므로, `while (str[i][j] != '\0') j++;`로 `'\0'`을 만날 때까지 센 값이 길이이다.
+<img width="1075" height="235" alt="image" src="https://github.com/user-attachments/assets/9f963a79-02f5-419f-9d4f-d940c3220890" />
+
 
 **실습과제5 — 사전에서 제일 뒤에 나오는 문자열**
 문자는 아스키코드 값으로 비교되며 알파벳은 사전 순서대로 값이 커진다. 따라서 첫 문자의 값이 가장 큰 문자열이 사전에서 가장 뒤에 나온다. (첫 문자만 비교하므로 첫 글자가 같은 문자열끼리는 구분하지 않는다.)
+<img width="1073" height="170" alt="image" src="https://github.com/user-attachments/assets/2095266b-971b-491b-93b6-6ec71effb06d" />
+

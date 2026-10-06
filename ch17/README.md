@@ -45,14 +45,20 @@ double** dptr = &ptr;
 ## 실습과제2
 
 포인터 배열 `int* ptrarr[3]`의 배열명은 첫 번째 원소(`int*`)의 주소이므로 자료형이 `int**`이다. 그래서 함수의 매개변수를 `int** dptr`로 선언하고, `*(dptr[i])`로 각 포인터가 가리키는 정수를 꺼내 최댓값을 구한다.
+<img width="1092" height="85" alt="image" src="https://github.com/user-attachments/assets/c1a872ed-b190-47f1-bb61-00dc90403896" />
+
 
 ## 실습과제3
 
 문자열 포인터 배열 `char* ptrarr[]`의 배열명은 `char**` 형이다. 원소 개수는 `sizeof(ptrarr)/sizeof(ptrarr[0])`로 구하고, `prn_str(char** dptr, int n)`에서 `dptr[i]`(= 문자열의 시작 주소)를 `%s`로 출력한다.
+<img width="1085" height="138" alt="image" src="https://github.com/user-attachments/assets/b60ee622-4b91-4c38-8681-61a5315bab33" />
+
 
 ## 실습과제4 (교재 368쪽 문제 17-1)
 
 배열에서 최댓값과 최솟값을 찾아, **값이 아니라 그 원소의 주소**를 `main`의 포인터 변수 `maxPtr`, `minPtr`에 저장해 주는 `MaxAndMin` 함수를 만든다. (`실습과제4.c`)
+<img width="1096" height="171" alt="image" src="https://github.com/user-attachments/assets/af2fce34-fe80-4092-9c9f-f01f6cf2e93c" />
+
 
 ### 왜 이중 포인터가 필요한가?
 

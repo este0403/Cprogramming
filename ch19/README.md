@@ -95,13 +95,8 @@ vp = (int*)vp + 1;           // 형변환 후 정수 덧셈 가능
 ### 실행 결과
 
 ```
-[함수 포인터 매개변수]
-제곱 : 1 4 9 16 25 
-두 배 : 2 4 6 8 10 
+<img width="1066" height="201" alt="image" src="https://github.com/user-attachments/assets/acb4d0cd-61d0-406a-9e06-c33dba340d30" />
 
-[void 포인터 매개변수]
-교환 전 : x=10, y=20 / p=1.5, q=2.5
-교환 후 : x=20, y=10 / p=2.5, q=1.5
 ```
 
 ---
@@ -116,9 +111,8 @@ vp = (int*)vp + 1;           // 형변환 후 정수 덧셈 가능
 ### 실행 결과
 
 ```
-연산을 선택하시오(1:덧셈,2:뺄셈,3:곱셈,4:나눗셈) : 1
-두개의 정수를 입력하시오 : 10 20
-결과값: 30
+<img width="1085" height="135" alt="image" src="https://github.com/user-attachments/assets/5c915672-e66a-49f5-a80d-1914b1d84589" />
+
 ```
 
 ---
@@ -136,6 +130,8 @@ vp = (int*)vp + 1;           // 형변환 후 정수 덧셈 가능
 - 오른쪽으로 90° 회전하면 회전 전 `arr[i][j]`가 회전 후 `arr[j][N-1-i]` 위치로 이동한다. (맨 아래 행이 첫 번째 열이 됨)
 - 같은 배열에 바로 덮어쓰면 값이 사라지므로 임시 배열 `tmp`에 결과를 만든 뒤 원래 배열로 복사한다.
 - 초기 상태와 90°, 180°, 270° 회전 결과를 차례로 출력하며, 교재 그림 20-1과 같다.
+  <img width="1106" height="548" alt="image" src="https://github.com/user-attachments/assets/9d7f9fab-ab38-4f48-aae5-f4fe84737ab1" />
+
 
 ### 도전과제2: 달팽이 배열
 
@@ -144,12 +140,8 @@ vp = (int*)vp + 1;           // 형변환 후 정수 덧셈 가능
 - n이 홀수일 때 가운데 한 칸이 남는 경우나 n이 1~2인 경우를 위해 3), 4)번 방향에서는 남은 행/열이 있는지 확인한다.
 
 ```
-숫자를 입력하시오 : 5
-   1   2   3   4   5
-  16  17  18  19   6
-  15  24  25  20   7
-  14  23  22  21   8
-  13  12  11  10   9
+<img width="1103" height="237" alt="image" src="https://github.com/user-attachments/assets/dbdf308f-4bf8-411b-bb7b-dcaa8771ae17" />
+
 ```
 
 ### 도전과제3: 0~99 난수
@@ -157,3 +149,5 @@ vp = (int*)vp + 1;           // 형변환 후 정수 덧셈 가능
 - `rand()`는 0 이상 `RAND_MAX` 이하의 난수를 반환하므로, `rand() % 100`으로 100으로 나눈 나머지(0~99)만 얻는다.
 - `RAND_MAX`는 컴파일러마다 다르다. (Visual Studio는 32767, Linux gcc는 2147483647)
 - 씨앗(seed)을 바꾸지 않았으므로 실행할 때마다 같은 난수가 나온다. 매번 다르게 하려면 `srand((unsigned)time(NULL))`을 추가한다.
+<img width="1085" height="206" alt="image" src="https://github.com/user-attachments/assets/1dc6a5b4-6ad2-466b-bccf-029cd87cdcf7" />
+

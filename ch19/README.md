@@ -93,11 +93,7 @@ vp = (int*)vp + 1;           // 형변환 후 정수 덧셈 가능
 - `swap_any(&x, &y, sizeof(int))`와 `swap_any(&p, &q, sizeof(double))`처럼 함수 하나로 두 자료형을 모두 처리한다.
 
 ### 실행 결과
-
-```
 <img width="1066" height="201" alt="image" src="https://github.com/user-attachments/assets/acb4d0cd-61d0-406a-9e06-c33dba340d30" />
-
-```
 
 ---
 
@@ -110,10 +106,7 @@ vp = (int*)vp + 1;           // 형변환 후 정수 덧셈 가능
 
 ### 실행 결과
 
-```
 <img width="1085" height="135" alt="image" src="https://github.com/user-attachments/assets/5c915672-e66a-49f5-a80d-1914b1d84589" />
-
-```
 
 ---
 
@@ -139,10 +132,8 @@ vp = (int*)vp + 1;           // 형변환 후 정수 덧셈 가능
 - 위쪽 행(왼쪽→오른쪽), 오른쪽 열(위→아래), 아래쪽 행(오른쪽→왼쪽), 왼쪽 열(아래→위) 순서로 한 바퀴를 돌며 값을 채우고, 한 바퀴가 끝날 때마다 영역을 한 칸씩 줄인다.
 - n이 홀수일 때 가운데 한 칸이 남는 경우나 n이 1~2인 경우를 위해 3), 4)번 방향에서는 남은 행/열이 있는지 확인한다.
 
-```
 <img width="1103" height="237" alt="image" src="https://github.com/user-attachments/assets/dbdf308f-4bf8-411b-bb7b-dcaa8771ae17" />
 
-```
 
 ### 도전과제3: 0~99 난수
 

@@ -55,6 +55,7 @@
 ## 실습과제2
 
 `while (1)`과 `if (ch == 'q' || ch == 'Q') break;`로 종료 조건을 처리했다. `scanf(" %c", &ch)`처럼 `%c` 앞에 공백을 두어 이전 입력의 엔터키가 `ch`에 들어가지 않게 했다.
+<img width="1025" height="277" alt="image" src="https://github.com/user-attachments/assets/e8b4fc29-a283-4ec5-9b1c-3f842b96042b" />
 
 ---
 
@@ -62,11 +63,8 @@
 
 ### 위쪽 실행결과처럼 나오는 이유
 
-```
-이름을 입력하시오 : 홍길동<엔터>
-혈액형을 입력하시오 : 이름: 홍길동
-혈액형:
-```
+<img width="1103" height="149" alt="image" src="https://github.com/user-attachments/assets/bc6ea5b7-0fc8-4f78-8013-75dded0e62b4" />
+
 
 1. `scanf("%s", name)`은 "홍길동"만 읽어 `name`에 저장하고 버퍼에서 제거한다. 입력완료문자인 엔터키 `'\n'`은 **버퍼에 남는다**.
 2. 다음 `scanf("%c", &blood_type)`가 실행될 때 입력 버퍼가 비어 있지 않으므로 사용자 입력을 기다리지 않고 남아있던 `'\n'`을 바로 `blood_type`에 저장한다.
@@ -103,6 +101,8 @@
 
 (`scanf("%c")` 전에 `getchar();`로 `'\n'`을 비우는 방법도 있다.)
 
+<img width="1098" height="147" alt="image" src="https://github.com/user-attachments/assets/2b275d84-1c53-41d5-a11d-a108ac858203" />
+
 ---
 
 ## 실습과제4
@@ -118,14 +118,8 @@ for (i = 0; i < 5; i++)
 
 실행결과
 
-```
-문자 입력:abcde<엔터>
-문자: a
-문자 입력:문자: b
-문자 입력:문자: c
-문자 입력:문자: d
-문자 입력:문자: e
-```
+<img width="1106" height="160" alt="image" src="https://github.com/user-attachments/assets/3ab34d19-d416-414d-a1fd-05a7750e9abc" />
+
 
 ### 반복 단계별 버퍼 상태
 
@@ -168,3 +162,4 @@ i=4:  [ \n ][ e ]                       → 'e'
 입력 버퍼:  H e l l o ␣ w o r l d \n
 str 배열:   H e l l o ␣ w o r l d \0   (i=11에서 '\n'을 만나 종료 후 str[11]='\0')
 ```
+<img width="1104" height="87" alt="image" src="https://github.com/user-attachments/assets/3a600185-f887-4311-aefd-3d3f1b39a67f" />

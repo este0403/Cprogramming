@@ -1,16 +1,16 @@
-#define _CRT_SECURE_NO_WARNINGS // º¸¾È¿À·ù¹æÁö
-#pragma warning(disable:6031)  // ¸®ÅÏ°ª°ü·Ã °æ°í ¹æÁö
+#define _CRT_SECURE_NO_WARNINGS // ë³´ì•ˆì˜¤ë¥˜ë°©ì§€
+#pragma warning(disable:6031)  // ë¦¬í„´ê°’ê´€ë ¨ ê²½ê³  ë°©ì§€
 #include <stdio.h>
 
-//ÇĞ¹ø:2600152
+//í•™ë²ˆ:2600152
 
-//ÀÌ¸§: ÀÌÁØ¿µ
+//ì´ë¦„: ì´ì¤€ì˜
 
-//ÃÑÁ¡:
+//ì´ì :
 
 
 
-//1¹ø
+//1ë²ˆ
 
 /*
 void get_data(double* data, int len);
@@ -29,7 +29,7 @@ int main(void) {
 }
 
 void get_data(double* data, int len) {
-	printf("%d°³ÀÇ ½Ç¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À. \n", len);
+	printf("%dê°œì˜ ì‹¤ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤. \n", len);
 	scanf("%lf", &data[0]);
 	for (int i = 1; i < len; i++) {
 		scanf("%lf", &data[i]);
@@ -59,22 +59,22 @@ void get_stat(double* data, int len, double* stat) {
 }
 
 void put_stat(double* stat) {
-	printf("ÃÖ¼Ò°ª: %f \n", stat[0]);
-	printf("ÃÖ´ë°ª: %f \n", stat[1]);
-	printf("Æò±Õ°ª: %lf \n", stat[2]);
+	printf("ìµœì†Œê°’: %f \n", stat[0]);
+	printf("ìµœëŒ€ê°’: %f \n", stat[1]);
+	printf("í‰ê· ê°’: %lf \n", stat[2]);
 }
 */
 
 
-//2¹ø
+//2ë²ˆ
 
-/*¼Ò½ºÄÚµåÀÛ¼º Å×½ºÆ®ÈÄ ÁÖ¼®Ã³¸®*/
+/*ì†ŒìŠ¤ì½”ë“œì‘ì„± í…ŒìŠ¤íŠ¸í›„ ì£¼ì„ì²˜ë¦¬*/
 
 
 
-//3¹ø
+//3ë²ˆ
 
-/*¼Ò½ºÄÚµåÀÛ¼º Å×½ºÆ®ÈÄ ÁÖ¼®Ã³¸®*/
+/*
 int get_value(int* arr, int* fun(int, int));
 int big(int a, int b);
 int small(int a, int b);
@@ -84,10 +84,10 @@ int main(void) {
 	int res;
 
 	res = get_value(arr, big);
-	printf("ÃÖ´ë°ªÀº: %d \n", res);
+	printf("ìµœëŒ€ê°’ì€: %d \n", res);
 
 	res = get_value(arr, small);
-	printf("ÃÖ¼Ò°ªÀº: %d \n", res);
+	printf("ìµœì†Œê°’ì€: %d \n", res);
 
 	return 0;
 }
@@ -111,13 +111,48 @@ int get_value(int* arr, int* fun(int, int)) {
 	for (int i = 0; i < 5; i++) {
 		x = fun(x, arr[i]);
 	}
+	return x;
 }
-//4¹ø
-
-/*¼Ò½ºÄÚµåÀÛ¼º Å×½ºÆ®ÈÄ ÁÖ¼®Ã³¸®*/
+*/
 
 
+//4ë²ˆ
 
-//5¹ø
+/*
+void print_str(char* arr[], int count);
+char* get_first(char* arr[], int count);
 
-/*¼Ò½ºÄÚµåÀÛ¼º Å×½ºÆ®ÈÄ ÁÖ¼®Ã³¸®*/
+int main(void) {
+	char* ptrarr[4] = { "eagle", "tiger", "lion", "squirrel" };
+	char* ptr;
+	int count = sizeof(ptrarr) / sizeof(ptrarr[0]);
+	
+	print_str(ptrarr, count);
+	ptr = get_first(ptrarr, count);
+	printf("ì‚¬ì „ì—ì„œ ê°€ì¥ ì•ì— ì˜¤ëŠ” ë‹¨ì–´: %s \n", ptr);
+
+	return 0;
+}
+
+void print_str(char* arr[], int count) {
+	for (int i = 0; i < count; i++) {
+		printf("%s \n", arr[i]);
+	}
+}
+char* get_first(char* arr[], int count) {
+	char first = arr[0][0];
+	int x = 0;
+	for (int i = 1; i < count; i++) {
+		if (first > arr[i][0]) {
+			first = arr[i][0];
+			x = i;
+		}
+	}
+	return arr[x];
+}
+*/
+
+
+//5ë²ˆ
+
+/*ì†ŒìŠ¤ì½”ë“œì‘ì„± í…ŒìŠ¤íŠ¸í›„ ì£¼ì„ì²˜ë¦¬*/

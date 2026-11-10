@@ -8,7 +8,7 @@
 #pragma warning(disable:6031)
 #include <stdio.h>
 
-#define N 3     // 학생 수
+
 
 // 이름, 점수를 멤버로 가지는 구조체를 typedef로 정의
 typedef struct {
@@ -22,11 +22,11 @@ Student get_best(const Student arr[], int n); // 최우수 학생의 데이터�
 
 int main(void)
 {
-    Student list[N];    // 3명의 정보를 저장할 구조체 배열
+    Student list[3];    // 3명의 정보를 저장할 구조체 배열
     Student best;       // 최우수 학생
 
-    get_data(list, N);          // 배열 이름은 주소이므로 원본 배열에 바로 저장된다.
-    best = get_best(list, N);   // 구조체는 대입(=)이 가능하므로 반환값을 그대로 저장
+    get_data(list, 3);          // 배열 이름은 주소이므로 원본 배열에 바로 저장된다.
+    best = get_best(list, 3);   // 구조체는 대입(=)이 가능하므로 반환값을 그대로 저장
 
     // 출력은 main 함수에서 처리
     printf("최우수학생의 이름은 %s, 점수는 %d점\n", best.name, best.score);

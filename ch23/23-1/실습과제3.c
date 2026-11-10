@@ -9,7 +9,6 @@
 #include <stdio.h>
 #include <string.h>     // strcmp 함수 사용
 
-#define N 3     // 학생 수
 
 // 이름, 점수를 멤버로 가지는 구조체를 typedef로 정의
 typedef struct {
@@ -23,11 +22,11 @@ Student get_first(const Student arr[], int n); // 이름이 사전에서 제일 
 
 int main(void)
 {
-    Student list[N];    // 3명의 정보를 저장할 구조체 배열
+    Student list[3];    // 3명의 정보를 저장할 구조체 배열
     Student first;      // 이름이 가장 앞에 나오는 학생
 
-    get_data(list, N);
-    first = get_first(list, N);
+    get_data(list, 3);
+    first = get_first(list, 3);
 
     printf("제일 앞에 나오는 이름은 %s, 점수는 %d점\n", first.name, first.score);
 
